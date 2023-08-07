@@ -33,7 +33,7 @@
 /* ------------------------------------- */
 
 .nav-bar {
-  background-color: mediumaquamarine;
+  background-color: #FE8701;
 
   &__nav-list {
     display: flex;
@@ -49,12 +49,11 @@
 
   &__nav-item {
     text-align: center;
-    background-color: pink;
   }
 
   &__nav-link {
     display: block;
-    background-color: purple;
+    background-color: #FE8701;
     color: #fff;
     padding: 1em 2em;
     text-decoration: none;
@@ -72,9 +71,10 @@
 /* ------------------------------------- */
 
 .search-bar {
-  background-color: olivedrab;
+  background-color: #062131;
   display: flex;
   justify-content: space-between;
+  color: #FFFFFF;
 
   &__logo-container,
   &__form-container {
@@ -82,33 +82,43 @@
   }
 
   &__logo-container {
-    background-color: yellow;
+    background-color: #062131;
   }
 
   &__form-container {
-    background-color: gold;
+    background-color: #062131;
     display: flex;
     flex-basis: 100%;
     justify-content: center;
   }
 
   &__form-label {
-    background-color: greenyellow;
+    background-color: #062131;
+    margin-right: 5%;
   }
 
   &__form-search {
-    background-color: deeppink;
+    background-color: #FFFFFF;
     width: 70%;
+    height: 110%;
   }
 
   &__form-submit {
-    background-color: darkslategray;
+    background-color: #FE8701;
     color: white;
+    height: 110%;
+    width: 10%;
+    margin-left: 5%;
+    border-radius: 1em;
+    border: #062131 solid ;
   }
 
   &__carrito-container {
     flex: 0 0 3em; /* shorthand (grow shrink basis */
-    background-color: goldenrod;
+    background-color: #062131;
+    text-align: center;
+    padding: 1em;
+
   }
 }
 
