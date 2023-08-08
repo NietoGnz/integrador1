@@ -12,6 +12,6 @@ imageNavbar.src = '/img/navimg.jpg';
 NavbarContainer.appendChild(imageNavbar);
 
 imageNavbar.style.width= '100%'; 
-imageNavbar.style.maxHeight= '600px';
+imageNavbar.style.maxHeight= '300px';
 
 
