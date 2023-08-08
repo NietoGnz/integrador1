@@ -84,6 +84,9 @@
   &__article { 
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    
+
   }
 
   &__content {
@@ -106,17 +109,24 @@
 
     &__article { /* .card__article */
       display: flex;
+      height: 200px;
+      width: auto;
+      justify-content: space-between;
+    
+
     }
+    
 
     & &__image-container {
+      height: auto;
       width: 50%;
       clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
     }
     
     &:hover &__image-container, /* .card:hover .card__image-container */
     &:focus &__image-container {
-      width: 40%;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      width: 50%;
+      clip-path: polygon(0 0, 95% 0, 100% 100%, 0% 100%);
     }
   }
 }
