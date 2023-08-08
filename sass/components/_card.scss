@@ -1,11 +1,22 @@
 .section-cards {
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-container {  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+
 }
 
 .card {
   outline: none; /* Como el borde pero no ocupa espacio en la caja */
-  width: 220px;
-  max-width: 300px;
+  max-width: 80%;
   height: 400px;
   overflow: hidden; /* Si el contenido ocupa más espacio que el tamaño del contenedor. Queda oculto */
   border-top-left-radius: 5px;
@@ -45,19 +56,19 @@
   }
 
   &__image-container {
-    height: 200px;
+    height: 400px;
     background-color: blue;
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px);
+    width: 300px;
+    clip-path: polygon(0 0, 77% 0, 100% 100%, 0% 100%);
   }
 
   &:hover &__image-container,
   &:focus &__image-container {
-    clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px);
+    clip-path: polygon(0 0, 100% 0, 77% 100%, 0% 100%);;
   }
 
   &__image {
-    width: 100%;
+    width: 300px;
     height: 100%; /* 200px */
     object-fit: cover;
     transition: .2s;
@@ -67,6 +78,13 @@
   &:focus &__image {
     transform: scale(1.4) rotate(5deg);
     transform-origin: center;
+  }
+
+  &__article { 
+    display: flex;
+    justify-content: space-around;
+    
+
   }
 
   &__content {
