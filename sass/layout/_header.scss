@@ -9,6 +9,7 @@
   @media (max-width: 768px) {
     & {
       flex-direction: column-reverse;
+
     }
   }
 
@@ -39,13 +40,11 @@
   justify-content: space-between;
   margin: 0px;
 
-  
-
-
   &__nav-list {
     display: flex;
     list-style-type: none;
     justify-content: center;
+    
   
 
     @media (max-width: 768px) {
@@ -83,6 +82,9 @@
   display: flex;
   justify-content: space-between;
   color: #FFFFFF;
+  position: sticky;
+  top: -16000px;
+  width: 100%;
 
   &__logo-container,
   &__form-container {
@@ -122,7 +124,7 @@
   }
 
   &__carrito-container {
-    flex: 0 0 3em; /* shorthand (grow shrink basis */
+    flex: 0 0 3em;
     background-color: #96024b;
     text-align: center;
     padding: 1em;
@@ -176,4 +178,9 @@
       display: block;
     }
   }
-}
+
+  .nav-bar__img {
+    display: none;
+  }
+  }
+

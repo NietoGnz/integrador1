@@ -1,5 +1,5 @@
 .section-cards {
-  background-color: #f1f2f3;
+  background-color: black;
   padding: 1em;
 }
 
@@ -8,4 +8,10 @@
   flex-wrap: wrap;
   gap: 1em;
   justify-content: center;
+}
+
+body {
+  @media (min-width: 426px) and (max-width: 768px) {
+    min-width: 500px;
+  }
 }
