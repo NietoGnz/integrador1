@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="En">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,22 +15,87 @@
     <nav class="nav-bar"> <!-- nav-bar -->
       <ul class="nav-bar__nav-list">
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Inicio</a>
+          <a href="/index.html" class="nav-bar__nav-link">Inicio</a>
         </li>
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Alta</a>
+          <a href="/views/alta.html" class="nav-bar__nav-link">Alta</a>
         </li>
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Contacto</a>
+          <a href="/views/contacto.html" class="nav-bar__nav-link">Contacto</a>
         </li>
         <li class="nav-bar__nav-item">
-          <a href="#" class="nav-bar__nav-link">Nosotros</a>
+          <a href="/views/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
         </li>
       </ul>
     </nav> <!-- nav-bar -->
+    
+<main>
+    <div class="search-bar"> <!-- search-bar -->
+      <div class="search-bar__logo-container">Logo</div>
+      <form action="" class="search-bar__form-container">
+        <label for="busqueda" class="search-bar__form-label">Buscar</label>
+        <input type="search" class="search-bar__form-search" id="busqueda">
+        <input type="submit" value="Buscar" class="search-bar__form-submit">
+      </form>
+      <div class="search-bar__carrito-container">C</div>
+      <div class="menu-toggle">
+        <label for="menu" class="menu-toggle__label">
+          <span class="menu-toggle__top-bread"></span>
+          <span class="menu-toggle__meat"></span>
+          <span class="menu-toggle__bottom-bread"></span>
+        </label>
+      </div>
+    </div> <!-- search-bar -->
   </header>
+<main class="main-contacto">
+<div class="contacto">
+  <div class="contacto-header"> 
 
-  <script type="module" src="/main.js"></script>
+    <h1>Bienvenidos a ByteBazaar,</h1>
+
+    <h2>Contacto</h2> 
+
+    <p>¡Nos encantaría saber de ti! Si tienes alguna pregunta, comentario o inquietud, no dudes en ponerte en contacto con nosotros. Nuestro equipo de atención al cliente está aquí para ayudarte en lo que necesites.</p>
+
+    <div class="contacto-formularios">
+
+      <h2> Información de Contacto:</h2>
+      <p>Dirección: Calle Falsa 456</p>
+      <p>Teléfono: +33 6 60 32 06 45</p>
+      <p>Correo Electrónico: ByteBazaar.electronics@gmail.com</p>
+      <p>Horario de Atención: Sabado a Domingo: [02:00h] - [08:00]</p>
+
+    </div>
+    <div class="contacto-formularios">
+
+    <h2>Formulario de Contacto:</h2>
+    <p>Si prefieres, también puedes enviarnos un mensaje a través de este formulario y te responderemos en breve:</p>
+
+    <form action="" class="contacto-formularios__message-form">
+    <label for="Mensaje" class="contacto-formularios__message-label">Mensaje</label>
+    <input type="text" class="contacto-formularios__message-text">
+    <input type="submit" value="Enviar" class="contacto-formularios__message-submit">
+    </form>
+  
+  </div>
+    <div class="contacto-formularios">
+      <h2>Ubicación en el Mapa:</h2>
+      <p>Aquí puedes encontrar nuestra ubicación en el mapa para visitarnos en persona:
+      <img src="" alt="Local">
+      </p>  
+    </div>
+    <div class="contacto-formularios">
+      <h2>Atención al Cliente:</h2>
+      <p> En ByteBazaar, la satisfacción del cliente es nuestra prioridad. Nuestro equipo de atención al cliente está aquí para ayudarte con cualquier consulta o problema que puedas tener. No dudes en ponerte en contacto con nosotros y haremos todo lo posible para brindarte la mejor experiencia.</p>
+      <p>¡Esperamos escucharte pronto!</p>
+      <p> Recuerda personalizar la información de contacto y el formulario según tus necesidades específicas. También puedes agregar cualquier otro detalle que creas que sea relevante para tus clientes. ¡Espero que esto te ayude a crear una página de contacto efectiva para ByteBazaar!</p>
+    </div>
+  </div>
+</div>
+</main>
+<footer>
+</footer>
+   <script type="module" src="/main.js"></script>
 </body>
 
 </html>

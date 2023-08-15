@@ -3,22 +3,25 @@ import "./sass/main.scss";
 
 console.log(document.querySelector("title").textContent);
 
+const titleWebsite= document.querySelector('title');
+titleWebsite.text= 'ByteBazaar'
 
 /* Nav Bar */
 
 const NavbarContainer = document.querySelector('nav');
 const imageNavbar = document.createElement('img');
-imageNavbar.src = '/img/Logoproyecto.jpg';
+imageNavbar.src = '../public/img/Logoproyecto.jpg';
 NavbarContainer.appendChild(imageNavbar);
 imageNavbar.style.width= '100%'; 
 imageNavbar.className= 'nav-bar__img';
+imageNavbar.id= 'nav-bar__img';
 
 /* Formulario */
 
 const logoContainer = document.querySelector('div.search-bar__logo-container');
 logoContainer.textContent = '';
 const imgLogo = document.createElement('img');
-imgLogo.src = 'public/img/logo.png';
+imgLogo.src = "../public/img/Logo.png";
 logoContainer.appendChild(imgLogo);
 imgLogo.style.width= '50px'
 
@@ -29,24 +32,84 @@ buscarNavBar.innerHTML= 'Busqueda';
 
 /* Carrito */
 
-const sandwichMenu = document.querySelector('div.search-bar__carrito-container');
-sandwichMenu.textContent = '';
+const carritoIcon = document.querySelector('div.search-bar__carrito-container');
+carritoIcon.textContent = '';
 const imgCarrito = document.createElement('img');
-imgCarrito.src = 'img/carrito-de-compras.png';
-imgCarrito.style.width = '25px';
-sandwichMenu.appendChild(imgCarrito);
+imgCarrito.src = '../public/img/carrito-de-compras.png';
+imgCarrito.style.width = '40px';
+imgCarrito.style.zIndex= '1';
+imgCarrito.style.position= 'static';
+carritoIcon.appendChild(imgCarrito);
 imgCarrito.style.alignItems = 'center';
 
+const conteoCompra = document.createElement('div');
+carritoIcon.appendChild(conteoCompra);
+conteoCompra.style.width= '20px';
+conteoCompra.style.height= '20px'
+conteoCompra.style.clipPath= 'circle(50% at 50% 50%)';
+conteoCompra.style.backgroundColor= 'white';
+conteoCompra.style.position= 'relative';
+conteoCompra.style.zIndex= '2';
+conteoCompra.style.bottom= '20px';
+conteoCompra.style.left= '25px';
+
+const itemCarrito= document.createElement('div')
+conteoCompra.appendChild(itemCarrito)
+itemCarrito.style.backgroundColor= 'white'
+itemCarrito.style.width= '15px'
+itemCarrito.style.height= '15px'
+itemCarrito.style.top= '2.5px'
+itemCarrito.style.left= '2.5px'
+itemCarrito.style.position= 'relative'
+
+let amountCarrito= document.createElement('p')
+itemCarrito.appendChild(amountCarrito)
+amountCarrito.textContent= ('0')
+amountCarrito.style.color= 'black';
+amountCarrito.style.fontWeight= 'bold'
+
+let itemCards = document.getElementsByClassName('card')
+
+let inicialNumber = 0;
+
+for (let i = 0; i < itemCards.length; i++) {
+    itemCards[i].addEventListener("click", function() {
+      inicialNumber++;
+      amountCarrito.textContent = inicialNumber;
+    });
+  }
+
+
+/* Footer */
+
+
+let today = new Date()
+let year = today.getFullYear()
+console.log(year)
+let foot = document.querySelector('footer')
+let copyRights = ` &copy; ${year} ByteBazaar. Todos los derechos reservados.`
+let dynamicText = document.createElement('p')
+dynamicText.innerHTML = copyRights
+foot.appendChild(dynamicText)
 
 /*Card section */
 
 /*Card section - resultado de busqueda */
 
-const resultadoBusqueda = document.querySelector('h1');
+const resultadoBusqueda=document.querySelector('.section-cards__header h1');
 resultadoBusqueda.style.color = '#252525';
+resultadoBusqueda.textContent= 'Nuestros productos'
 
-const resuldatoP = document.querySelector('p');
+
+const amountResultado= document.querySelectorAll('.card').length;
+/* console.log(amountResultado) */
+
+const resuldatoP = document.querySelector(".section-cards__header p");
 resuldatoP.style.color = '#252525';
+resuldatoP.textContent= `Se encontraron ${amountResultado} productos`;
+
+
+
 
 /*Card section - Cards heading */
 

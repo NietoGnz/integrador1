@@ -72,6 +72,12 @@
   }
 }
 
+.nav-bar__img { 
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
 /* ------------------------------------- */
 /* SEARCH BAR                            */
 /* ------------------------------------- */
@@ -170,24 +176,24 @@
   &__meat,
   &__bottom-bread {
     display: block;
-    background-color: #333;
-    height: .2em;
+    background-color: #f0f0f0;
+    height: .5em;
     position: absolute;
     left: .5em;
     right: .5em;
   }
 
   &__top-bread {
-    top: .8em;
+    top: 1.2em;
   }
 
   &__meat {
-    top: 50%;
+    top: 47%;
     margin-top: -.1em;
   }
 
   &__bottom-bread {
-    bottom: .8em;
+    bottom: 1.2em;
   }
 
   @media (max-width: 768px) {
@@ -201,3 +207,9 @@
   }
   }
 
+/* Split */ 
+
+.nosotros__split {
+  height: 50px;
+  background-image: linear-gradient(0.25turn, #404040, #f0f0f0, #404040)
+}
