@@ -96,7 +96,7 @@
 
   &__logo-container,
   &__form-container {
-    padding: 1em;
+    padding: 1em 0 1em 1em;
   }
 
   &__logo-container {
@@ -149,7 +149,7 @@
     flex: 0 0 3em;
     background-color: #252525;
     text-align: center;
-    padding: 1em;
+    padding: 1em 1em 0;
     align-self: center;
 
   }

@@ -10,7 +10,7 @@ titleWebsite.text= 'ByteBazaar'
 
 const NavbarContainer = document.querySelector('nav');
 const imageNavbar = document.createElement('img');
-imageNavbar.src = '../public/img/Logoproyecto.jpg';
+imageNavbar.src = '../img/Logoproyecto.jpg';
 NavbarContainer.appendChild(imageNavbar);
 imageNavbar.style.width= '100%'; 
 imageNavbar.className= 'nav-bar__img';
@@ -21,26 +21,27 @@ imageNavbar.id= 'nav-bar__img';
 const logoContainer = document.querySelector('div.search-bar__logo-container');
 logoContainer.textContent = '';
 const imgLogo = document.createElement('img');
-imgLogo.src = "../public/img/Logo.png";
-logoContainer.appendChild(imgLogo);
+imgLogo.src = "../img/Logo.png";
+logoContainer.appendChild(imgLogo)
 imgLogo.style.width= '50px'
 
 /* Label */
 
 const buscarNavBar = document.querySelector('label.search-bar__form-label');
 buscarNavBar.innerHTML= 'Busqueda';
+buscarNavBar.style.margin= '0 auto';
 
 /* Carrito */
 
 const carritoIcon = document.querySelector('div.search-bar__carrito-container');
 carritoIcon.textContent = '';
 const imgCarrito = document.createElement('img');
-imgCarrito.src = '../public/img/carrito-de-compras.png';
+imgCarrito.src = '../img/carrito-de-compras.png';
 imgCarrito.style.width = '40px';
-imgCarrito.style.zIndex= '1';
 imgCarrito.style.position= 'static';
 carritoIcon.appendChild(imgCarrito);
-imgCarrito.style.alignItems = 'center';
+
+
 
 const conteoCompra = document.createElement('div');
 carritoIcon.appendChild(conteoCompra);
