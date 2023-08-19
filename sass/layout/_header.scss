@@ -12,6 +12,9 @@
 
     }
   }
+  @media (max-width: 425px) { 
+    max-width: 425px;
+  }
 
 
 }
@@ -138,8 +141,17 @@
     border-radius: 1em;
     border: #252525 solid ;
     align-self: center;
+
     @media (max-width: 768px) {
     width: 20%;;
+    }
+    @media (max-width: 425px) {
+      display: flex;
+      font-weight: 700;
+      font-size: .8em;
+      justify-content: space-around;
+      width: 30%;
+
     }
 
     

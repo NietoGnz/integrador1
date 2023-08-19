@@ -18,6 +18,8 @@ imageNavbar.id= 'nav-bar__img';
 
 /* Formulario */
 
+/* Logo */
+
 const logoContainer = document.querySelector('div.search-bar__logo-container');
 logoContainer.textContent = '';
 const imgLogo = document.createElement('img');
